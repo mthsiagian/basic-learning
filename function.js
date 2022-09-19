@@ -53,6 +53,7 @@ function simpleCalculator(x, y, operator) {
 }
 
 simpleCalculator(1, 2, "+"); // Output: 3
+simpleCalculator(5, 6, "+"); // Output: 11
 simpleCalculator(3, 1, "-"); // Output: 2
 simpleCalculator(5, 2, "*"); // Output: 10
 simpleCalculator(10, 2, "/"); // Output: 5
