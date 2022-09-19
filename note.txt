@@ -1,0 +1,60 @@
+// console.log("helloworld!!!");
+
+
+// Tipe data primitive
+
+// String
+// Text / Plain text => "kalimat disini"
+
+// Integer
+// Bilangan bulat => 1 , 2, 3, 4
+
+// Double / Float
+// Bilangan desimal 1.0, 2.3, 55.2
+
+// Boolean
+// True / False => true, false
+
+// Array
+// Kumpulan dari banyak value => ["a", "b", "c", 30, 3.5, true, false]
+Array dimulai dengan index 0
+Jika index yang di akses melebihi dari panjang array, value nya undefined
+
+
+// Object: TBD
+
+
+VARIABLE
+let
+const
+var: deprecated => kadaluarsa
+
+variable name: 
+    - camel case: lastIndex, firstIndex, calculationValue
+    - snake case: last_index, first_index, calculation_value
+    - standard: lastindex, firstindex, calculationvalue
+
+
+
+
+Function:
+- Memetakan input value menjadi output yang sesuai dengan kebutuhan
+- Function dapat menerima argument input
+
+Conditional IF:
+
+if(condition){
+    do something
+} else {
+    do something else
+}
+
+Logic operator: 
+&& : and
+|| : or
+> : greater than
+>= : Greater-Than or Equal To
+< : lower than
+<= : lower than or equal to
+== : check the value is identical
+=== : check the value and type are indentical 

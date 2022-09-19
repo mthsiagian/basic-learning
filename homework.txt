@@ -1,0 +1,3 @@
+1. Buat 1 function kalkulator sederhana menerima 3 argument input (bilangan 1, operator, bilangan 2);
+Argumen bilangan 1 dan 2 adalah integer.
+Argumen input operator sebagai string.
