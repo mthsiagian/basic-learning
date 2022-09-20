@@ -58,3 +58,8 @@ Logic operator:
 <= : lower than or equal to
 == : check the value is identical
 === : check the value and type are indentical 
+
+Looping: (TB Explored by Jery)
+- For loop
+- While loop
+- Do While
