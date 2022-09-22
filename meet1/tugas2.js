@@ -55,4 +55,28 @@ for(let i=0; i < arrayOfNumber.length; i++) {
 // Output: 48
 // Output: 52
 // Output: 56
-const arrayOfNumber = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29];
+
+console.log("===================================================")
+const arrayNumber = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29];
+for(let i=0; i < arrayNumber.length; i++) {
+    let indexNilai = arrayNumber[i];
+    let indexNilaiBerikut = arrayNumber[i+1]
+    if(indexNilai > 0 && indexNilai < 10 && indexNilaiBerikut < 10) {
+        hasilPerkalian = simpleCalculator(indexNilai, indexNilaiBerikut, "*");
+        console.log(hasilPerkalian);
+    }
+
+
+    if(indexNilai > 10 && indexNilai<20 && indexNilaiBerikut <20 ){
+        
+        hasilPengurangan = simpleCalculator(indexNilai, indexNilaiBerikut, "-");
+        console.log(hasilPengurangan);
+    }
+
+    if(indexNilai > 20 && indexNilai < 30 && indexNilaiBerikut < 30){
+        hasilPenambahan = simpleCalculator(indexNilai, indexNilaiBerikut, "+");
+        console.log(hasilPenambahan);
+    }
+}
+
+
