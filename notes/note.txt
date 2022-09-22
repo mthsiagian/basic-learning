@@ -63,3 +63,8 @@ Looping: (TB Explored by Jery)
 - For loop
 - While loop
 - Do While
+
+git : 
+- git add .
+- git commit -m " commit massage"
+- git push
