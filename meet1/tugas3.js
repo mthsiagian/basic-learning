@@ -30,7 +30,7 @@ for(let i=0; i < 5; i++) {
         for(let j=0; j <= i; j++) {
           arr.push(arrWord[i])
         }
-        console.log(arr.join(""))
+        console.log(arr.join(" "))
     }
     
 
