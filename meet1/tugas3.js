@@ -41,6 +41,15 @@ for(let i=0; i < 5; i++) {
     1 2 3 4
     1 2 3 4 5
  */
+    let arrInt = [1, 2, 3, 4, 5];
+    for(let i=0; i < 5; i++) {
+      let arr = [];
+      for(let j=0; j <= i; j++) {
+          arr.push(arrInt[j])
+        }
+        console.log(arr.join(" "))
+    }
+    
 
 /**
     * * * * *
@@ -49,7 +58,16 @@ for(let i=0; i < 5; i++) {
     * *
     *
  */
+ for(let i=0; i < 5; i++) {
+  let arr2 = [];
+    for(let j=i; j < 5; j++) {
+      arr2.push('* ')
+    }
+    console.log(arr2.join(""))
+    // console.log("\n")
+}
 
+ 
 /**
     1 2 3 4 5
     1 2 3 4 
@@ -57,6 +75,15 @@ for(let i=0; i < 5; i++) {
     1 2
     1
  */
+    let arrInt2 = [1, 2, 3, 4, 5];
+    for(let i=0; i < 5; i++) {
+      let arr = [];
+      for(let j=i ; j < 5; j++) {
+          arr.push(arrInt2[j])
+        }
+        console.log(arr.join(" "))
+    }
+    
 
 
 /**
@@ -66,6 +93,17 @@ for(let i=0; i < 5; i++) {
   * * * * * * *
 * * * * * * * * *
  */
+for(let i=0; i < 5; i++) {
+  let arr2 = [];
+    for(let j=i; j <= 5; j++) {
+      arr2.push(' ')
+    }
+    for( let y= 0; y<= i; y++){
+      arr2.push(`* `)
+    }
+    console.log(arr2.join(""))
+  }
+
 
 
 /**
@@ -76,6 +114,33 @@ for(let i=0; i < 5; i++) {
 5 6 7 8 9 8 7 6 5
  */
 
+for(let i=0; i < 5; i++) {
+  let arr2 = [];
+
+    for(let j=i; j < 5; j++) {
+      arr2.push(' ')
+    }
+    for( let y= 0; y< i; y++){
+      arr2.push(`*`)
+    }
+    console.log(arr2.join(" "))
+  }
+  console.log(`============================`)
+
+  let arrInt1 = [1, 2, 3, 4, 5];
+  for(let i=0; i < 5; i++) {
+    let arr2 = [];
+    let dataBaru = arrInt1[i]
+    let dataNextBaru= arrInt[i + 1]
+    for(let j=i; j <= 5; j++) {
+      arr2.push(' ')
+    }
+    for( let y= 0; y<= i; y++){
+      arr2.push(arrInt1)
+    }
+    console.log(arr2.join(""))
+  }
+    console.log(`============================`)
 
 /**
 * * * * * * * * *
@@ -84,6 +149,16 @@ for(let i=0; i < 5; i++) {
       * * *
         *
  */
+for(let i=0; i < 5; i++) {
+  let arr2 = [];
+    for(let j=0; j < i; j++) {
+      arr2.push(' ')
+    }
+    for( let y= i; y < 5; y++){
+      arr2.push(`* `)
+    }
+    console.log(arr2.join(""))
+  }
 
 
 /**
@@ -101,6 +176,13 @@ for(let i=0; i < 5; i++) {
     4 5 6
     7 8 9 10
  */
-
+//   let arrInt0 = [1, 2, 3, 4, 5];
+// for( i =0; i< 5; i++){
+//   let velue= i +1
+//   let arr2 = [];
+//   for(let j=0; j < i; j++) {
+//     arr2.push(arrInt0)}
+//     console.log(arr2.join(""))
+//   }
 
 
