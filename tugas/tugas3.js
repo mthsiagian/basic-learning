@@ -96,7 +96,7 @@ for(let i=0; i < 5; i++) {
  */
 
 let x = 5;
-let y = 2 * x +1;
+let y = 2 * x + 1;
 
 for(let i=0; i < x; i++) {
   let arr = [];
@@ -113,7 +113,7 @@ for(let i=0; i < x; i++) {
   }
   console.log(arr.join(" "))
 }
-
+console.log(`=========================================`)
 
 // /**
 //         1
@@ -122,34 +122,34 @@ for(let i=0; i < x; i++) {
 //   4 5 6 7 6 5 4
 // 5 6 7 8 9 8 7 6 5
 //  */
+let a = 5;
+let b = 2 * x + 1;
 
-// for(let i=0; i < 5; i++) {
-//   let arr2 = [];
+for(let i=0; i < x; i++) {
+  let arr = [];
+  let counter = i+1
+  let counterKurang= i-1
+  let posisiAwal = b - a - i;
+  let panjangKolom = 2 * i + 1;
+  let posisiAkhir = posisiAwal + panjangKolom;
+  for(let j=0; j < b; j++) {
+    let nilaiTengah = y/2
+    
+    if(j >= posisiAwal && j < posisiAkhir) {
+      if(j <= nilaiTengah){
+      arr.push(counter++)
+    } else{
+      arr.push(counter--)
+    }
+  }
+    else {
+      arr.push(" ")
+    }
+  }
+  console.log(arr.join(" "))
+}
 
-//     for(let j=i; j < 5; j++) {
-//       arr2.push(' ')
-//     }
-//     for( let y= 0; y< i; y++){
-//       arr2.push(`*`)
-//     }
-//     console.log(arr2.join(" "))
-//   }
-//   console.log(`============================`)
-
-//   let arrInt1 = [1, 2, 3, 4, 5];
-//   for(let i=0; i < 5; i++) {
-//     let arr2 = [];
-//     let dataBaru = arrInt1[i]
-//     let dataNextBaru= arrInt[i + 1]
-//     for(let j=i; j <= 5; j++) {
-//       arr2.push(' ')
-//     }
-//     for( let y= 0; y<= i; y++){
-//       arr2.push(arrInt1)
-//     }
-//     console.log(arr2.join(""))
-//   }
-//     console.log(`============================`)
+    console.log(`============================`)
 
 // /**
 // * * * * * * * * *
@@ -158,16 +158,25 @@ for(let i=0; i < x; i++) {
 //       * * *
 //         *
 //  */
-// for(let i=0; i < 5; i++) {
-//   let arr2 = [];
-//     for(let j=0; j < i; j++) {
-//       arr2.push(' ')
-//     }
-//     for( let y= i; y < 5; y++){
-//       arr2.push(`* `)
-//     }
-//     console.log(arr2.join(""))
-//   }
+x= 5
+y= x * 2 + 1
+
+for (i= 0; i < x; i++ ){
+    let arr = []
+    let dimulai = y - x * 2 + i
+    let panjang = y - 2 * i - 2
+    let diakhiri = dimulai + panjang
+    for( j=0; j< y; j++){
+
+    if(j >= dimulai && j < diakhiri) {
+        arr.push('*')
+      } else {
+        arr.push(" ")
+      }
+    }
+    
+    console.log(arr.join (` `))
+    }
 
 
 // /**
@@ -180,18 +189,20 @@ for(let i=0; i < x; i++) {
 //  */
 
 // /**
-//     1
-//     2 3
-//     4 5 6
-//     7 8 9 10
+//     1            0 + 1 - 2 + 1 
+//     2 3          1 + 2 - 2 + 2
+//     4 5 6        2 + 3 - 2 + 3
+//     7 8 9 10     3 + 4 - 2 + 4
 //  */
-// //   let arrInt0 = [1, 2, 3, 4, 5];
-// // for( i =0; i< 5; i++){
-// //   let velue= i +1
-// //   let arr2 = [];
-// //   for(let j=0; j < i; j++) {
-// //     arr2.push(arrInt0)}
-// //     console.log(arr2.join(""))
-// //   }
+let hasil = 1
+for(let i=0; i < 5; i++) {
+  let arr = [];
+  for(let j=0; j <= i; j++) {
+      arr.push(hasil++)
+    }
+    console.log(arr.join(" "))
+}
+
+
 
 
