@@ -12,10 +12,10 @@ let y = 2 * x + 1;
 
 for(let i=0; i < x; i++) {
   let arr = [];
-  let counter = i+1
+  let counter = 1
   // let counterKurang= i-1
   let posisiAwal = y - x - i ;
-  let panjangKolom = 2 * i + 1;
+  let panjangKolom = 2 * i + 1 ;
   let posisiAkhir = posisiAwal + panjangKolom;
   for(let j=0; j < y; j++) {
     let nilaiTengah = y/2
@@ -28,7 +28,7 @@ for(let i=0; i < x; i++) {
       }
     }
       else {
-      arr.push(" ")
+      arr.push("*")
     }
   }
   console.log(arr.join(" "))

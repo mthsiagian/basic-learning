@@ -123,9 +123,9 @@ console.log(`=========================================`)
 // 5 6 7 8 9 8 7 6 5
 //  */
 let a = 5;
-let b = 2 * x + 1;
+let b = 2 * a + 1;
 
-for(let i=0; i < x; i++) {
+for(let i=0; i < a; i++) {
   let arr = [];
   let counter = i+1
   let counterKurang= i-1
@@ -133,7 +133,7 @@ for(let i=0; i < x; i++) {
   let panjangKolom = 2 * i + 1;
   let posisiAkhir = posisiAwal + panjangKolom;
   for(let j=0; j < b; j++) {
-    let nilaiTengah = y/2
+    let nilaiTengah = b/2
     
     if(j >= posisiAwal && j < posisiAkhir) {
       if(j <= nilaiTengah){
@@ -187,6 +187,33 @@ for (i= 0; i < x; i++ ){
 //    1  4    6   4   1
 //  1  5   10   10  5   1
 //  */
+let c = 5;
+let d = 2 * c + 1;
+
+for(let i=0; i < x; i++) {
+  let arr = [];
+  let counter = 1
+  // let counterKurang= i-1
+  let posisiAwal = d - c - i ;
+  let panjangKolom = 2 * i + 1 ;
+  let posisiAkhir = posisiAwal + panjangKolom;
+  for(let j=0; j < d; j++) {
+    let nilaiTengah = d/2
+
+    if(j >= posisiAwal && j < posisiAkhir) {
+      if(j <= nilaiTengah){
+        arr.push(counter++)
+      } else {
+        arr.push(counter--)
+      }
+    }
+      else {
+      arr.push(" ")
+    }
+  }
+  console.log(arr.join(" "))
+}
+
 
 // /**
 //     1            0 + 1 - 2 + 1 
