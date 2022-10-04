@@ -28,10 +28,14 @@
 // 5. Buat sebuah function yang mengeluarkan output bilangan terbesar dari sebuah array
 // Contoh: Array [3, 5, 1, 2, 4, 6, 20, 22, 53, 32] 
 // Output: 53
+// Contoh: Array [3, 5, 1, 2, 4, 6, 200, 22, 53, 32, 3, 0, 9, 12, "I"]
+// Output: 200
 
 // 6. Buat sebuah function yang mengeluarkan satu output string yang memiliki length terpendek
 // Contoh: Array ["abc", "jery", "herman", "vio", "dio", "jesica", "a"]
 // Output: "a" 
+// Contoh: Array ["abc", "jery", "b", "vio", "dio", "jesica"]
+// Output: "b" 
 
 
 
