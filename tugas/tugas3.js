@@ -96,7 +96,7 @@ for(let i=0; i < 5; i++) {
  */
 
 let x = 5;
-let y = 2 * x + 1;
+let y = 2 * x - 1;
 
 for(let i=0; i < x; i++) {
   let arr = [];
@@ -123,17 +123,16 @@ console.log(`=========================================`)
 // 5 6 7 8 9 8 7 6 5
 //  */
 let a = 5;
-let b = 2 * a + 1;
+let b = 2 * a - 1;
 
 for(let i=0; i < a; i++) {
   let arr = [];
   let counter = i+1
-  let counterKurang= i-1
   let posisiAwal = b - a - i;
   let panjangKolom = 2 * i + 1;
   let posisiAkhir = posisiAwal + panjangKolom;
   for(let j=0; j < b; j++) {
-    let nilaiTengah = b/2
+    let nilaiTengah = b/2 - 1
     
     if(j >= posisiAwal && j < posisiAkhir) {
       if(j <= nilaiTengah){
@@ -148,8 +147,7 @@ for(let i=0; i < a; i++) {
   }
   console.log(arr.join(" "))
 }
-
-    console.log(`============================`)
+console.log(`============================`)
 
 // /**
 // * * * * * * * * *
@@ -159,12 +157,14 @@ for(let i=0; i < a; i++) {
 //         *
 //  */
 x= 5
-y= x * 2 + 1
+y= x * 2 - 1
 
 for (i= 0; i < x; i++ ){
     let arr = []
-    let dimulai = y - x * 2 + i
-    let panjang = y - 2 * i - 2
+    // let dimulai = y - x * 2 + i
+    // let panjang = y - 2 * i - 2
+    let dimulai = i;
+    let panjang = 2 * (x - i) - 1;
     let diakhiri = dimulai + panjang
     for( j=0; j< y; j++){
 
@@ -187,42 +187,53 @@ for (i= 0; i < x; i++ ){
 //    1  4    6   4   1
 //  1  5   10   10  5   1
 //  */
-let c = 5;
-let d = 2 * c + 1;
-
-for(let i=0; i < x; i++) {
+console.log(`============================`)
+let coef = 1, rows = 6;
+for(let i=0; i < rows; i++) {
   let arr = [];
-  let counter = 1
-  // let counterKurang= i-1
-  let posisiAwal = d - c - i ;
-  let panjangKolom = 2 * i + 1 ;
-  let posisiAkhir = posisiAwal + panjangKolom;
-  for(let j=0; j < d; j++) {
-    let nilaiTengah = d/2
-
-    if(j >= posisiAwal && j < posisiAkhir) {
-      if(j <= nilaiTengah){
-        arr.push(counter++)
-      } else {
-        arr.push(counter--)
-      }
+  for(let j=0; j <= i; j++) {
+    if (j == 0 || i == 0) {
+      coef = 1;
+    } else {
+      coef = coef * (i - j + 1) / j;
     }
-      else {
-      arr.push(" ")
+    arr.push(coef);
+  }
+
+  let y2 = 2 * rows - 1;
+  let arrCompose = [];
+
+  let startPosition = y2 - rows - i;
+  let length = 2 * i + 1;
+  let endPosition = startPosition + length;
+  let counterIndex = 0;
+  for(let j=0; j < y2; j++) {
+    if(j >= startPosition && j < endPosition) {
+      if(i % 2 == 0 && j % 2 == 0) {
+        arrCompose.push("  ")
+      } else if(i % 2 > 0 && j % 2 > 0) {
+        arrCompose.push("  ")
+      } else {
+        arrCompose.push(arr[counterIndex])
+        counterIndex++;
+      }
+    } else {
+      arrCompose.push("  ")
     }
   }
-  console.log(arr.join(" "))
+  console.log(arrCompose.join("  "))
 }
 
-
+console.log(`============================`)
 // /**
 //     1            0 + 1 - 2 + 1 
 //     2 3          1 + 2 - 2 + 2
 //     4 5 6        2 + 3 - 2 + 3
 //     7 8 9 10     3 + 4 - 2 + 4
 //  */
+let x1 = 4; 
 let hasil = 1
-for(let i=0; i < 5; i++) {
+for(let i=0; i < x1; i++) {
   let arr = [];
   for(let j=0; j <= i; j++) {
       arr.push(hasil++)
