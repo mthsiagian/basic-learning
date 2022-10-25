@@ -46,7 +46,7 @@ console.log(sayHello());
 //     if(n <= 0) {
 //         return 0;
 //     } else {
-//         return n + sumRecursiveFunction(n-1);
+//         return n * sumRecursiveFunction(n-1);
 //     }
 // }
 

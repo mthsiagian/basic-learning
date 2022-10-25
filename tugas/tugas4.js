@@ -69,31 +69,62 @@ console.log(kelipatan(10))
 // '1 x 3 = 3'
 // '1 x 3 = 3'
 // '\n'
-
+ let z = 4;
+for(a=1; a<=z; a++){
+    let variabel = []
+    for(b=1; b<=a; b++){
+     let angka = variabel.push(b) 
+     let pengali = variabel.push(a) 
+     
+    }
+    console.log(variabel.join(" "))
+}
 
 // 5. Buat sebuah function yang mengeluarkan output bilangan terbesar dari sebuah array
 // Contoh: Array [3, 5, 1, 2, 4, 6, 20, 22, 53, 32] 
 // Output: 53
 // Contoh: Array [3, 5, 1, 2, 4, 6, 200, 22, 53, 32, 3, 0, 9, 12, "I"]
 // Output: 200
+console.log(`==========================`)
 const arr = [3, 5, 1, 2, 4, 6, 20, 22, 53, 32];
-function maxVelue() {
-    let pembanding = 0
+const arr2 =[3, 5, 1, 2, 4, 6, 200, 22, 53, 32, 3, 0, 9, 12, "I"]
+function maxVelue(arr) {
+    let velueMax = -99999
     for (i = 0; i < arr.length; i++) {
         let arrVelue = arr[i]
-        let nextVelue = arr[i + 1]
-        if (arrVelue < nextVelue) {
-            nextVelue = arrVelue
+        if (velueMax < arrVelue) {
+            velueMax = arrVelue
         }
-    } console.log(maxVelue)
+    } 
+    return velueMax;
 }
+
+    console.log(maxVelue(arr2))
+    // console.log(200 < "I")
+
 
 // 6. Buat sebuah function yang mengeluarkan satu output string yang memiliki length terpendek
 // Contoh: Array ["abc", "jery", "herman", "vio", "dio", "jesica", "a"]
 // Output: "a"
 // Contoh: Array ["abc", "jery", "b", "vio", "dio", "jesica"]
 // Output: "b" 
+console.log(`===================`)
+    const nama = ["abc", "jery", "b", "vio", "dio", "jesica"];
+    function namaMax (nama){
+        let  namaMin = null ;
+        let namaMinLenght = 99999;
+        for(i=0; i < nama.length; i++){
+        let velueNama = nama[i];
+            if(namaMinLenght > velueNama.length){
+                namaMinLenght = velueNama.length
+                namaMin = nama[i]
+            }
+            
+        }
+        return namaMin;
+    }
 
+    console.log(namaMax(nama))
 
 
 
