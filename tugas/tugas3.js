@@ -6,13 +6,13 @@
     * * * * *
  */
 
-for(let i=0; i < 5; i++) {
+for (let i = 0; i < 5; i++) {
   let arr = [];
-    for(let j=0; j <= i; j++) {
-      arr.push('* ')
-    }
-    console.log(arr.join(""))
-    // console.log("\n")
+  for (let j = 0; j <= i; j++) {
+    arr.push('* ')
+  }
+  console.log(arr.join(""))
+  // console.log("\n")
 }
 
 
@@ -23,16 +23,16 @@ for(let i=0; i < 5; i++) {
     C C C
     D D D D
     E E E E E
- */ 
-    let arrWord = ["A", "B", "C", "D", "E"];
-    for(let i=0; i < 5; i++) {
-      let arr = [];
-        for(let j=0; j <= i; j++) {
-          arr.push(arrWord[i])
-        }
-        console.log(arr.join(" "))
-    }
-    
+ */
+let arrWord = ["A", "B", "C", "D", "E"];
+for (let i = 0; i < 5; i++) {
+  let arr = [];
+  for (let j = 0; j <= i; j++) {
+    arr.push(arrWord[i])
+  }
+  console.log(arr.join(" "))
+}
+
 
 /**
     1
@@ -41,15 +41,15 @@ for(let i=0; i < 5; i++) {
     1 2 3 4
     1 2 3 4 5
  */
-    let arrInt = [1, 2, 3, 4, 5];
-    for(let i=0; i < 5; i++) {
-      let arr = [];
-      for(let j=0; j <= i; j++) {
-          arr.push(arrInt[j])
-        }
-        console.log(arr.join(" "))
-    }
-    
+let arrInt = [1, 2, 3, 4, 5];
+for (let i = 0; i < 5; i++) {
+  let arr = [];
+  for (let j = 0; j <= i; j++) {
+    arr.push(arrInt[j])
+  }
+  console.log(arr.join(" "))
+}
+
 
 /**
     * * * * *
@@ -58,16 +58,16 @@ for(let i=0; i < 5; i++) {
     * *
     *
  */
- for(let i=0; i < 5; i++) {
+for (let i = 0; i < 5; i++) {
   let arr2 = [];
-    for(let j=i; j < 5; j++) {
-      arr2.push('* ')
-    }
-    console.log(arr2.join(""))
-    // console.log("\n")
+  for (let j = i; j < 5; j++) {
+    arr2.push('* ')
+  }
+  console.log(arr2.join(""))
+  // console.log("\n")
 }
 
- 
+
 /**
     1 2 3 4 5 -> i=0
     1 2 3 4   -> i=1
@@ -75,10 +75,10 @@ for(let i=0; i < 5; i++) {
     1 2       -> i=3
     1         -> i=4
  */
-for(let i=0; i < 5; i++) {
+for (let i = 0; i < 5; i++) {
   let counter = 1;
   let arr = [];
-  for(let j=i ; j < 5; j++) {
+  for (let j = i; j < 5; j++) {
     arr.push(counter++)
   }
   console.log(arr.join(" "))
@@ -98,14 +98,14 @@ for(let i=0; i < 5; i++) {
 let x = 5;
 let y = 2 * x - 1;
 
-for(let i=0; i < x; i++) {
+for (let i = 0; i < x; i++) {
   let arr = [];
   let posisiAwal = y - x - i;
   let panjangKolom = 2 * i + 1;
   let posisiAkhir = posisiAwal + panjangKolom;
 
-  for(let j=0; j < y; j++) {
-    if(j >= posisiAwal && j < posisiAkhir) {
+  for (let j = 0; j < y; j++) {
+    if (j >= posisiAwal && j < posisiAkhir) {
       arr.push('*')
     } else {
       arr.push(" ")
@@ -125,22 +125,22 @@ console.log(`=========================================`)
 let a = 5;
 let b = 2 * a - 1;
 
-for(let i=0; i < a; i++) {
+for (let i = 0; i < a; i++) {
   let arr = [];
-  let counter = i+1
+  let counter = i + 1
   let posisiAwal = b - a - i;
   let panjangKolom = 2 * i + 1;
   let posisiAkhir = posisiAwal + panjangKolom;
-  for(let j=0; j < b; j++) {
-    let nilaiTengah = b/2 - 1
-    
-    if(j >= posisiAwal && j < posisiAkhir) {
-      if(j <= nilaiTengah){
-      arr.push(counter++)
-    } else{
-      arr.push(counter--)
+  for (let j = 0; j < b; j++) {
+    let nilaiTengah = b / 2 - 1
+
+    if (j >= posisiAwal && j < posisiAkhir) {
+      if (j <= nilaiTengah) {
+        arr.push(counter++)
+      } else {
+        arr.push(counter--)
+      }
     }
-  }
     else {
       arr.push(" ")
     }
@@ -156,27 +156,27 @@ console.log(`============================`)
 //       * * *
 //         *
 //  */
-x= 5
-y= x * 2 - 1
+x = 5
+y = x * 2 - 1
 
-for (i= 0; i < x; i++ ){
-    let arr = []
-    // let dimulai = y - x * 2 + i
-    // let panjang = y - 2 * i - 2
-    let dimulai = i;
-    let panjang = 2 * (x - i) - 1;
-    let diakhiri = dimulai + panjang
-    for( j=0; j< y; j++){
+for (i = 0; i < x; i++) {
+  let arr = []
+  // let dimulai = y - x * 2 + i
+  // let panjang = y - 2 * i - 2
+  let dimulai = i;
+  let panjang = 2 * (x - i) - 1;
+  let diakhiri = dimulai + panjang
+  for (j = 0; j < y; j++) {
 
-    if(j >= dimulai && j < diakhiri) {
-        arr.push('*')
-      } else {
-        arr.push(" ")
-      }
+    if (j >= dimulai && j < diakhiri) {
+      arr.push('*')
+    } else {
+      arr.push(" ")
     }
-    
-    console.log(arr.join (` `))
-    }
+  }
+
+  console.log(arr.join(` `))
+}
 
 
 // /**
@@ -189,9 +189,9 @@ for (i= 0; i < x; i++ ){
 //  */
 console.log(`============================`)
 let coef = 1, rows = 6;
-for(let i=0; i < rows; i++) {
+for (let i = 0; i < rows; i++) {
   let arr = [];
-  for(let j=0; j <= i; j++) {
+  for (let j = 0; j <= i; j++) {
     if (j == 0 || i == 0) {
       coef = 1;
     } else {
@@ -207,11 +207,11 @@ for(let i=0; i < rows; i++) {
   let length = 2 * i + 1;
   let endPosition = startPosition + length;
   let counterIndex = 0;
-  for(let j=0; j < y2; j++) {
-    if(j >= startPosition && j < endPosition) {
-      if(i % 2 == 0 && j % 2 == 0) {
+  for (let j = 0; j < y2; j++) {
+    if (j >= startPosition && j < endPosition) {
+      if (i % 2 == 0 && j % 2 == 0) {
         arrCompose.push("  ")
-      } else if(i % 2 > 0 && j % 2 > 0) {
+      } else if (i % 2 > 0 && j % 2 > 0) {
         arrCompose.push("  ")
       } else {
         arrCompose.push(arr[counterIndex])
@@ -231,14 +231,14 @@ console.log(`============================`)
 //     4 5 6        2 + 3 - 2 + 3
 //     7 8 9 10     3 + 4 - 2 + 4
 //  */
-let x1 = 4; 
+let x1 = 4;
 let hasil = 1
-for(let i=0; i < x1; i++) {
+for (let i = 0; i < x1; i++) {
   let arr = [];
-  for(let j=0; j <= i; j++) {
-      arr.push(hasil++)
-    }
-    console.log(arr.join(" "))
+  for (let j = 0; j <= i; j++) {
+    arr.push(hasil++)
+  }
+  console.log(arr.join(" "))
 }
 
 

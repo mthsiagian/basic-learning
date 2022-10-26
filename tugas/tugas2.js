@@ -1,16 +1,16 @@
 // Example
-function simpleCalculator(x, y, operator){
+function simpleCalculator(x, y, operator) {
     let hasilPerhitungan;
-    if (operator=="+") {
-        hasilPerhitungan= x + y; 
-    } else if(operator=="-") {
-        hasilPerhitungan= x-y;
-    } else if(operator=="*") {
-        hasilPerhitungan= x * y;
-    } else if(operator=="/") {
-        hasilPerhitungan=x/ y;
+    if (operator == "+") {
+        hasilPerhitungan = x + y;
+    } else if (operator == "-") {
+        hasilPerhitungan = x - y;
+    } else if (operator == "*") {
+        hasilPerhitungan = x * y;
+    } else if (operator == "/") {
+        hasilPerhitungan = x / y;
     } else {
-        hasilPerhitungan="opertator tidak ditentukan"
+        hasilPerhitungan = "opertator tidak ditentukan"
     }
     return hasilPerhitungan;
 }
@@ -29,11 +29,11 @@ const arrayOfNumber = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19];
 
 // FOR LOOP
 // Condition: let i=0; i < 10; i++
-for(let i=0; i < arrayOfNumber.length; i++) {
+for (let i = 0; i < arrayOfNumber.length; i++) {
     let hasilPenjumlahan;
-    if(i+1 <= 9) {
+    if (i + 1 <= 9) {
         // hasilPenjumlahan = arrayOfNumber[i] + arrayOfNumber[i+1];
-        hasilPenjumlahan = simpleCalculator(arrayOfNumber[i], arrayOfNumber[i+1], "+");
+        hasilPenjumlahan = simpleCalculator(arrayOfNumber[i], arrayOfNumber[i + 1], "+");
         console.log(hasilPenjumlahan);
     }
 }
@@ -58,21 +58,21 @@ for(let i=0; i < arrayOfNumber.length; i++) {
 
 console.log("===================================================")
 const arrayNumber = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29];
-for(let g=0; g < arrayNumber.length; g++) {
+for (let g = 0; g < arrayNumber.length; g++) {
     let indexNilai = arrayNumber[g];
-    let indexNilaiBerikut = arrayNumber[g+1];
-    if(indexNilai > 0 && indexNilai < 10 && indexNilaiBerikut < 10) {
+    let indexNilaiBerikut = arrayNumber[g + 1];
+    if (indexNilai > 0 && indexNilai < 10 && indexNilaiBerikut < 10) {
         hasilPerkalian = simpleCalculator(indexNilai, indexNilaiBerikut, "*");
         console.log(hasilPerkalian);
     }
 
 
-    if(indexNilai > 10 && indexNilai<20 && indexNilaiBerikut <20 ){
+    if (indexNilai > 10 && indexNilai < 20 && indexNilaiBerikut < 20) {
         hasilPengurangan = simpleCalculator(indexNilai, indexNilaiBerikut, "-");
         console.log(hasilPengurangan);
     }
 
-    if(indexNilai > 20 && indexNilai < 30 && indexNilaiBerikut < 30){
+    if (indexNilai > 20 && indexNilai < 30 && indexNilaiBerikut < 30) {
         hasilPenambahan = simpleCalculator(indexNilai, indexNilaiBerikut, "+");
         console.log(hasilPenambahan);
     }
@@ -102,14 +102,14 @@ const unsortedArrayOfNumber1 = [3, 7, 9, 27, 13, 5, 15, 29, 1, 17, 19, 21, 23, 1
 const unsortedArrayOfNumber2 = [9, 27, 13, 5];
 
 function bubbleSort(arrayOfNumber) {
-    for(let i=0; i < arrayOfNumber.length - 1; i++) {
-        for(j=0; j < arrayOfNumber.length - 1; j++) {
+    for (let i = 0; i < arrayOfNumber.length - 1; i++) {
+        for (j = 0; j < arrayOfNumber.length - 1; j++) {
             let currentValue = arrayOfNumber[j];
-            let nextValue = arrayOfNumber[j+1];
-    
-            if(currentValue > nextValue) {
+            let nextValue = arrayOfNumber[j + 1];
+
+            if (currentValue > nextValue) {
                 arrayOfNumber[j] = nextValue;
-                arrayOfNumber[j+1] = currentValue;
+                arrayOfNumber[j + 1] = currentValue;
             }
         }
     }
