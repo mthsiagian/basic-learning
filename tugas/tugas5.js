@@ -1,0 +1,18 @@
+// 1. Buatlah sebuah program yang meminta user memasukkan nama, dan kemudian menyapa user dengan namanya!
+
+// 2. Buat sebuah function yang mengeluarkan output frame dari sebuah array of string seperti dibawah.
+// For example the list ["Hello", "World", "in", "a", "frame"] gets printed as:
+
+// *********
+// * Hello *
+// * World *
+// * in    *
+// * a     *
+// * frame *
+// *********
+
+// 3. Write a function that tests whether a string is a palindrome.
+// 4. Write a function that concatenates two lists. [a,b,c], [1,2,3] → [a,b,c,1,2,3]
+// 5. Write a function that combines two lists by alternatingly taking elements, e.g. [a,b,c], [1,2,3] → [a,1,b,2,c,3].
+// 6. Write a function that merges two sorted lists into a new sorted list. [1,4,6],[2,3,5] → [1,2,3,4,5,6].
+
