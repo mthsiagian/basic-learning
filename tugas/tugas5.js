@@ -12,6 +12,32 @@
 // *********
 
 // 3. Write a function that tests whether a string is a palindrome.
+// example: 
+// "buku": false
+// "kayak": true
+
+// function palindromeCheck(customString) {}  
+const palindromeCheck = (customString) => {
+        // 1. Simpan value dari string awal - DONE
+        const initialString = customString.toString();
+        const arrayString = initialString.split('');
+    
+        // 2. lakukan proses reverse
+            // b u k u - u k u b
+        let reversedArray = [];
+        const arrayLength = arrayString.length;
+        for(let i=0; i < arrayLength; i++) {
+            reversedArray[i] = arrayString[arrayLength - (i + 1)]
+        }
+        const reversedString = reversedArray.join('');
+         
+        // 3. Check string setelah reverse identik dengan string sebelum reverse
+        return initialString === reversedString;
+}
+console.log(palindromeCheck("12345654321"))
+
+
+
 // 4. Write a function that concatenates two lists. [a,b,c], [1,2,3] → [a,b,c,1,2,3]
 // 5. Write a function that combines two lists by alternatingly taking elements, e.g. [a,b,c], [1,2,3] → [a,1,b,2,c,3].
 // 6. Write a function that merges two sorted lists into a new sorted list. [1,4,6],[2,3,5] → [1,2,3,4,5,6].
