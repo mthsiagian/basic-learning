@@ -51,8 +51,9 @@ console.log(palindromeCheck("12345654321"))
 
 // 4. Write a function that concatenates two lists. [a,b,c], [1,2,3] → [a,b,c,1,2,3]
 let dataHuruf = [a,b,c];
-let dataAngka = [1,2,3]
-console.log(dataHuruf + dataAngka)
+let dataAngka = [1,2,3];
+
+
 // 5. Write a function that combines two lists by alternatingly taking elements, e.g. [a,b,c], [1,2,3] → [a,1,b,2,c,3].
 // 6. Write a function that merges two sorted lists into a new sorted list. [1,4,6],[2,3,5] → [1,2,3,4,5,6].
 
