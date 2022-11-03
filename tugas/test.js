@@ -25,3 +25,12 @@ for (i=0; i<=batasDeret; i++){
     a = b;
     b = c;
 }
+
+let input = 4;
+for(let i=0; i<=input; i++){
+    let arr = []
+    for( let j=0; j < 2 * i + 1; j++){
+        arr.push("* ")
+    }
+    console.log(arr.join(""))
+}
