@@ -34,9 +34,23 @@ const palindromeCheck = (customString) => {
         // 3. Check string setelah reverse identik dengan string sebelum reverse
         return initialString === reversedString;
 }
-console.log(palindromeCheck("12345654321"))
+console.log(palindromeCheck("12345654321"));
 
+// arrayLength = 11
+// arrayString[2] : mengakses nilai pada array index-2
 
+// arrayString[arrayLength] : 
+// arrayString[11] : 
+
+// let nilai = reversedArray[3];
+// nilai : undefined
+
+// let reversedArray = [];
+// reversedArray[3] = 12
+// | | | |12| | | | | | | |
+//i|0|1|2|3 |4|5|6|7|8|9|0|
+
+// let nilai = reversedArray[3];
 
 // 4. Write a function that concatenates two lists. [a,b,c], [1,2,3] → [a,b,c,1,2,3]
 // 5. Write a function that combines two lists by alternatingly taking elements, e.g. [a,b,c], [1,2,3] → [a,1,b,2,c,3].
