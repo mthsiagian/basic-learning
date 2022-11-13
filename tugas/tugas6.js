@@ -20,24 +20,28 @@
 // }
 // rotasiArray (arr , 3);
 // let panjangArr = arr.length; // = 6
-let arr = [1,2,3,4,5,6]
-let awal = arr.join("");
-let panjangAwal = awal.length;
-let kElement = 3;
-let arrayKosong = [];
-for (let i = 0; i < panjangAwal; i++) {
-    if (i < kElement) {
-        arrayKosong.push(awal[i + kElement])
-    } else {
-        arrayKosong.push(awal[i - kElement])  
+let angka = [1, 2, 3, 4, 5, 6]
+
+function arrayMove(arr, kElement) {
+    let awal = arr.join("");
+    let panjangAwal = awal.length;
+    // let kElement = 4;
+    let arrayKosong = [];
+    for (let i = 0; i < panjangAwal; i++) {
+        if (i < panjangAwal- kElement) {
+            arrayKosong.push(awal[i + kElement]);
+        } else {
+            arrayKosong.push(awal[i - (panjangAwal - kElement)]);
+        }
     }
+    console.log(arrayKosong)
 }
-console.log(arrayKosong)
+arrayMove(angka,0);
 
-
-//2. Buatlah sebuah function yang dapat menemukan 
+//2. Buatlah sebuah function yang dapat menemukan
 //bilangan palindrom terpanjang dari sebuah string.
 // Contoh: "sasagas"
 // panlindrome string: "sas", "asa", "aga" "sagas"
 // palindrome dengan string terpanjang: sagas
 // output: "sagas"
+
