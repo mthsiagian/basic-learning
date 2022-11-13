@@ -28,7 +28,7 @@ function arrayMove(arr, kElement) {
     // let kElement = 4;
     let arrayKosong = [];
     for (let i = 0; i < panjangAwal; i++) {
-        if (i < panjangAwal- kElement) {
+        if (i < panjangAwal - kElement) {
             arrayKosong.push(awal[i + kElement]);
         } else {
             arrayKosong.push(awal[i - (panjangAwal - kElement)]);
@@ -36,7 +36,7 @@ function arrayMove(arr, kElement) {
     }
     console.log(arrayKosong)
 }
-arrayMove(angka,0);
+arrayMove(angka, 0);
 
 //2. Buatlah sebuah function yang dapat menemukan
 //bilangan palindrom terpanjang dari sebuah string.
