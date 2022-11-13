@@ -73,6 +73,7 @@ function penggabungArr(arrHuruf, arrAngka) {
     return hasilGabung.split("")
 }
 console.log(penggabungArr(dataHuruf, dataAngka))
+console.log(dataAngka.join())
 
 
 

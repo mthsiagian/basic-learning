@@ -1,16 +1,33 @@
-// function angka(n){
-//     if(n==0)return;
-//     console.log(n)
-//     return angka(n-1)
-// }
-// console.log(angka(20))
-let z = 10;
-for(a=1; a<=z; a++){
-    let variabel = []
-    for(b=1; b<=a; b++){
-        let hasil = a * b
-        // variabel.push (hasil)
-        variabel.push(b + " x " + a + " = " + hasil);
+function Angkot(namaSupir, trayek, penumpang, kas) {
+    this.namaSupir = namaSupir;
+    this.trayek = trayek;
+    this.penumpang = penumpang;
+    this.kas = kas;
+
+    this.penumpangNaik = function (namaPenumpang) {
+        this.penumpang.push(namaPenumpang);
+        return this.penumpang
     }
-    console.log(variabel.join("  "))
+
+    this.penumpangTurun = function (namaPenumpang, bayar) {
+        if (this.penumpang == 0) {
+            console.log("angkot masih kosong!");
+            return false;
+        }
+
+        for (let i = 0; i <= this.penumpang; i++) {
+            if (this.penumpang[i] == namaPenumpang) {
+                this.penumpang[i] = undefined;
+                this.kas += bayar
+                return this.penumpang;
+            }
+        }
+
+    }
 }
+
+let angkot1 = new Angkot("Azis", ["Tangerang", "Cipondoh"], [], 0);
+
+console.log(angkot1.penumpangNaik("Alek", "Wildan"));
+
+console.log(angkot1.penumpangTurun("Wildan", 2500));
