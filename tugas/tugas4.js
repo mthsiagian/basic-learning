@@ -70,7 +70,7 @@ console.log(kelipatan(10))
 // '1 x 3 = 3'
 // '\n'
 function deretPerkalian(x) {
-    for (a = 1; a <= x; a++) {
+    for (a = 1; a <=12; a++) {
         let variabel = []
         for (b = 1; b <= a; b++) {
             let hasil = a * b

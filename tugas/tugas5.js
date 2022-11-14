@@ -81,7 +81,7 @@ console.log(dataAngka.join())
 
 let panjangAngka = dataAngka.length
 let arrKosong = []
-for ( let i = 0; i < panjangAngka; i++){
+for (let i = 0; i < panjangAngka; i++) {
     arrKosong.push(dataHuruf[i])
     arrKosong.push(dataAngka[i])
 }
@@ -90,11 +90,11 @@ console.log(arrKosong)
 
 // 6. Write a function that merges two sorted lists into a new sorted list. [1,4,6],[2,3,5] → [1,2,3,4,5,6].
 
-let angka1 = [1,4,6];
-let angka2 = [2,3,5];
+let angka1 = [1, 4, 6];
+let angka2 = [2, 3, 5];
 let ruangKosong = []
-for ( let i = 0; i < panjangAngka; i++){
-    if(angka1[i] < angka2[i]){
+for (let i = 0; i < panjangAngka; i++) {
+    if (angka1[i] < angka2[i]) {
         ruangKosong.push(angka1[i])
         ruangKosong.push(angka2[i])
     } else {

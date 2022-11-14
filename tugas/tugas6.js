@@ -34,9 +34,9 @@ function arrayMove(arr, kElement) {
             arrayKosong.push(awal[i - (panjangAwal - kElement)]);
         }
     }
-    console.log(arrayKosong)
+    console.log(arrayKosong);
 }
-arrayMove(angka, 0);
+arrayMove(angka, 5);
 
 //2. Buatlah sebuah function yang dapat menemukan
 //bilangan palindrom terpanjang dari sebuah string.
@@ -45,3 +45,28 @@ arrayMove(angka, 0);
 // palindrome dengan string terpanjang: sagas
 // output: "sagas"
 
+let huruf = "sasagas";
+let panjangHuruf = huruf.length;
+let pembagian = [];
+for (let i = 0; i < panjangHuruf; i++) {
+    for (let j = 0; j < panjangHuruf - i; j++) {
+        let hurufBagi = huruf.slice(i, panjangHuruf - j);
+        pembagian.push(hurufBagi);
+    }
+}
+console.log(pembagian);
+
+// function palindromeCheck(customString){
+//     const initialString = customString.toString();
+//     const arrayString = initialString.split('');
+
+//     let reversedArray = [];
+//     const arrayLength = arrayString.length;
+//     for (let i = 0; i < arrayLength; i++) {
+//         reversedArray[i] = arrayString[arrayLength - (i + 1)]
+//     }
+//     const reversedString = reversedArray.join('');
+
+//     return initialString === reversedString;
+// }
+// console.log(palindromeCheck("12345654321"));
