@@ -8,20 +8,7 @@
 // Array [3,5,2,9,6,1,3] , k = 4 outputnya [6,1,3,3,5,2,9]
 // Array [3,5,2,9,6,1,3] , k = 5 outputnya [1,3,3,5,2,9,6]
 // Array [3,5,2,9,6,1,3] , k = 6 outputnya [3,3,5,2,9,6,1]
-
-// let arr = [1, 2, 3, 4, 5, 6];
-// function rotasiArray (dataArray , kElement) {
-//     let arrayGabung = dataArray.join("");
-//     let panjangArrayGabung = arrayGabung.length;
-//     let arrayMove = panjangArrayGabung - kElement;
-
-//     return arrayMove;
-
-// }
-// rotasiArray (arr , 3);
-// let panjangArr = arr.length; // = 6
 let angka = [1, 2, 3, 4, 5, 6, 7];
-
 function arrayMove(arr, kElement) {
     let awal = arr.join("");
     let panjangAwal = awal.length;
