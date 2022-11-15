@@ -20,7 +20,7 @@
 // }
 // rotasiArray (arr , 3);
 // let panjangArr = arr.length; // = 6
-let angka = [1, 2, 3, 4, 5, 6]
+let angka = [1, 2, 3, 4, 5, 6, 7];
 
 function arrayMove(arr, kElement) {
     let awal = arr.join("");
@@ -58,22 +58,22 @@ function palindromWordCheck(huruf) {
         }
         const reversedString = reversedArray.join('');
         if (customString.length <= 1) {
-            return false
+            return false;
         } else {
             return initialString === reversedString;
         }
     }
     let panjangHuruf = huruf.length;
-    let arrayBaru = []
+    let arrayBaru = [];
     for (let i = 0; i < panjangHuruf; i++) {
         for (let j = 0; j < panjangHuruf - i; j++) {
-            let hurufBagi = huruf.slice(i, panjangHuruf - j)
+            let hurufBagi = huruf.slice(i, panjangHuruf - j);
             if (palindromeCheck(hurufBagi)) {
-                arrayBaru.push(hurufBagi)
+                arrayBaru.push(hurufBagi);
             }
         }
     }
-    let palindromTerpanjang = []
+    let palindromTerpanjang = [];
     let panjangPalindromTerpanjang = 0
     for (let i = 0; i < arrayBaru.length; i++) {
         if (panjangPalindromTerpanjang < arrayBaru[i].length) {
@@ -81,6 +81,6 @@ function palindromWordCheck(huruf) {
             palindromTerpanjang = arrayBaru[i];
         }
     }
-    console.log(palindromTerpanjang)
+    console.log(palindromTerpanjang);
 }
 palindromWordCheck("bukuku");
