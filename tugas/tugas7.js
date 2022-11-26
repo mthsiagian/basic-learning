@@ -1,0 +1,1 @@
+// Buatlah sebuah class untuk mengggambarkan kartu joker.
