@@ -33,23 +33,6 @@ arrayMove(angka, 5);
 // output: "sagas"
 
 function palindromWordCheck(huruf) {
-
-    function palindromeCheck(customString) {
-        const initialString = customString.toString();
-        const arrayString = initialString.split('');
-
-        let reversedArray = [];
-        const arrayLength = arrayString.length;
-        for (let i = 0; i < arrayLength; i++) {
-            reversedArray[i] = arrayString[arrayLength - (i + 1)]
-        }
-        const reversedString = reversedArray.join('');
-        if (customString.length <= 1) {
-            return false;
-        } else {
-            return initialString === reversedString;
-        }
-    }
     let panjangHuruf = huruf.length;
     let arrayBaru = [];
     for (let i = 0; i < panjangHuruf; i++) {
@@ -57,10 +40,10 @@ function palindromWordCheck(huruf) {
             let hurufBagi = huruf.slice(i, panjangHuruf - j);
             if (palindromeCheck(hurufBagi)) {
                 arrayBaru.push(hurufBagi);
-            }
+            } 
         }
     }
-    let palindromTerpanjang = [];
+    let palindromTerpanjang = "";
     let panjangPalindromTerpanjang = 0
     for (let i = 0; i < arrayBaru.length; i++) {
         if (panjangPalindromTerpanjang < arrayBaru[i].length) {
@@ -71,3 +54,20 @@ function palindromWordCheck(huruf) {
     console.log(palindromTerpanjang);
 }
 palindromWordCheck("bukuku");
+
+function palindromeCheck(customString) {
+    const initialString = customString.toString();
+    const arrayString = initialString.split('');
+
+    let reversedArray = [];
+    const arrayLength = arrayString.length;
+    for (let i = 0; i < arrayLength; i++) {
+        reversedArray[i] = arrayString[arrayLength - (i + 1)]
+    }
+    const reversedString = reversedArray.join('');
+    if (customString.length <= 1) {
+        return false;
+    } else {
+        return initialString === reversedString;
+    }
+}

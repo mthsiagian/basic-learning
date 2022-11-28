@@ -134,7 +134,6 @@ for (let i = 0; i < a; i++) {
   let posisiAkhir = posisiAwal + panjangKolom;
   for (let j = 0; j < b; j++) {
     let nilaiTengah = b / 2 - 1
-
     if (j >= posisiAwal && j < posisiAkhir) {
       if (j <= nilaiTengah) {
         arr.push(counter++)
