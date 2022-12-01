@@ -1,22 +1,34 @@
-// Buatlah sebuah class untuk mengggambarkan kartu joker.
-class joker {
-    #fungsi;
-    constructor(fungsi) {
-        this.#fungsi = fungsi;
+// Buatlah sebuah class untuk mengggambarkan jenisKartu joker.
+class Joker {
+    #angka;
+    #jenisKartu
+    constructor(angka , jenisKartu) {
+        this.#angka = angka;
+        this.#jenisKartu = jenisKartu;
     }
-    // setfungsi() {
-    //     this.#fungsi = fungsi;
+    // setangka() {
+    //     this.#angka = angka;
     // }
-    // getfungsi() {
-    //    return this.#fungsi;
+    // getangka() {
+    //    return this.#angka;
     // }
     kegunaan(){
-        if (typeof(this.#fungsi) == 'number'){
-            console.log("Kartu Anda adalah Joker !!;D ");
-        } else {
-            console.log("Maaf Kartu Anda bukan Joker !! -_-")
-        }
+        return this.#angka == 'number'
+    }
+    waru (){
+       return this.#jenisKartu == "waru";
+    }
+    hati(){
+       return this.#jenisKartu == "hati";
+    }
+    wajik (){
+       return this.#jenisKartu == "wajik";
+    }
+    keriting(){
+       return this.#jenisKartu == "keriting";
     }
 }
-const angka = new joker (1);
-angka.kegunaan();
+const joker = new Joker (1 , "hati");
+
+const dauHati = joker.hati();
+console.log(dauHati);
