@@ -1,0 +1,12 @@
+{
+    "judul": "Thinking Fast and Slow",
+    "pengarang": "Anthony Hadi",
+    "alamat": {
+        "kota": "Surabaya",
+        "provinsi": "Jawa Timurrrrr",
+        "kodePos": 12345
+    },
+    "halaman": 312,
+    "genre": ["pengembangan", "keuangan", "motivasi"],
+    "terjemahan": false
+}

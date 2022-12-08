@@ -21,7 +21,10 @@ Array dimulai dengan index 0
 Jika index yang di akses melebihi dari panjang array, value nya undefined
 
 
-// Object: TBD
+JSON (Javascript Object Notation) - Object 
+Memiliki pasangan key - value
+key dari sebuah json object selalu string 
+value dari sebuah json object 
 
 
 VARIABLE
