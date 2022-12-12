@@ -42,5 +42,5 @@ const xyzAtomizer = new Atomizer('hitam', true, true);
 const batteryABC = new Battery(3200, 0);
 const batteryBCD = new Battery(1600, 15);
 
-const teslaMod = new Mod(reloadAtomizer, batteryBCD);
+const teslaMod = new Mod(reloadAtomizer, batteryABC);
 teslaMod.firing();
