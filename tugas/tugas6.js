@@ -51,9 +51,9 @@ function palindromWordCheck(huruf) {
             palindromTerpanjang = arrayBaru[i];
         }
     }
-    console.log(palindromTerpanjang);
+    return (palindromTerpanjang);
 }
-palindromWordCheck("bukuku");
+console.log(palindromWordCheck("bukuku"));
 
 function palindromeCheck(customString) {
     const initialString = customString.toString();
